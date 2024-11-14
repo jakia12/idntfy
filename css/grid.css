@@ -1,0 +1,1151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME | Nvidia On Tron</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/style.js"></script>
+	
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="font-primary text-white w-full overflow-x-hidden">
+    <nav class="p-8 z-50 bg-1 relative " style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+        <div class="flex justify-between items-center  max-w-screen-xl mx-auto">
+            <p class="text primary text-4xl text-white  text-stroke-sm flex gap-2 pointer-events-none">NVIDIA
+            </p>
+            <div class="gap-x-12 items-center hidden lg:flex"><a href="#About">
+                    <p class="font-semibold hover:text-lyllw transition-all ease-in-out duration-300">CTO FUNDRAISING</p>
+                </a><a href="#contact">
+                    <p class="font-semibold hover:text-lyllw transition-all ease-in-out duration-300">CONTACT</p>
+                </a><a href="https://t.me/nvidia_cto">
+                    <p class="font-semibold hover:text-lyllw transition-all ease-in-out duration-300">TELEGRAM</p>
+                </a><a href=" https://twitter.com/nvidia_cto">
+                    <p class="font-semibold hover:text-lyllw transition-all ease-in-out duration-300">TWITTER</p>
+                </a></div>
+                <div class="parent-div flex gap-x-4 items-center">
+                <div class="child-div dropdown">
+                    <button class="dropbtn  bg-gradient-to-tr from-yllw/10 to-lyllw/10 font-semibold hover:scale-[1.05] hover:from-yllw/60 hover:to-lyllw/60 transition-all ease-in-out duration-300" id="selectedChain">
+                        <div class="btnlogo btnsize">
+                            <svg id="tron" alt="tron" width="24" height="24" style="margin-right: 12px; width: 25px; height: 25px;"><rect rx="6" fill="#F9F9F9" width="24" height="24"></rect><rect rx="6" fill="
+                                #0a6bf266" width="24" height="24"></rect>
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="2" y="2" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve"><script xmlns=""/>
+                                <style type="text/css">
+                                    .st0{fill:#ff0000;}
+                                    .st1{transform: scale(0.6);transform-origin: center; fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                                </style>
+                                <circle class="st0" cx="28" cy="28" r="28"/>
+                                <path class="st1"  d="M61.55,19.28c-3-2.77-7.15-7-10.53-10l-.2-.14a3.82,3.82,0,0,0-1.11-.62l0,0C41.56,7,3.63-.09,2.89,0a1.4,1.4,0,0,0-.58.22L2.12.37a2.23,2.23,0,0,0-.52.84l-.05.13v.71l0,.11C5.82,14.05,22.68,53,26,62.14c.2.62.58,1.8,1.29,1.86h.16c.38,0,2-2.14,2-2.14S58.41,26.74,61.34,23a9.46,9.46,0,0,0,1-1.48A2.41,2.41,0,0,0,61.55,19.28ZM36.88,23.37,49.24,13.12l7.25,6.68Zm-4.8-.67L10.8,5.26l34.43,6.35ZM34,27.27l21.78-3.51-24.9,30ZM7.91,7,30.3,26,27.06,53.78Z"/>
+                                <script xmlns=""/></svg>
+                            </svg>
+                        </div>
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="dropdown-content" id="chainDropdown">
+                        <!-- <a href="#" onclick="changeChain('ethereum', this)">
+                            <div class="btnlogo">
+                                <svg id="Ethereum" alt="Ethereum Logo" width="24" height="24" style="margin-right: 12px; width: 24px; height: 24px;"><rect rx="6" fill="#F9F9F9" width="24" height="24"></rect><rect rx="6" fill="#6B8AFF33" width="24" height="24"></rect><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4817 4.29043L7.08715 11.516C6.91315 11.8019 7.00806 12.1725 7.29743 12.3421L11.692 14.9163C11.8818 15.0279 12.1182 15.0279 12.308 14.9163L16.7026 12.3421C16.9919 12.1725 17.0869 11.8019 16.9129 11.516L12.5192 4.29043C12.2838 3.90319 11.7171 3.90319 11.4817 4.29043Z" fill="#6B8AFF"></path><path d="M15.7897 15.0102C15.7897 14.999 15.7878 14.9888 15.7869 14.9786C15.785 14.9684 15.7831 14.9582 15.7813 14.948C15.7785 14.9359 15.7748 14.9248 15.7711 14.9127C15.7683 14.9035 15.7655 14.8951 15.7608 14.8868C15.7552 14.8738 15.7478 14.8608 15.7404 14.8487C15.7366 14.8422 15.7329 14.8348 15.7283 14.8283C15.7153 14.8098 15.7013 14.7912 15.6846 14.7754C15.6678 14.7597 15.6502 14.7448 15.6316 14.7318C15.625 14.7272 15.6185 14.7244 15.6111 14.7198C15.599 14.7123 15.586 14.7049 15.573 14.6993C15.5646 14.6956 15.5553 14.6928 15.546 14.6891C15.5348 14.6854 15.5228 14.6817 15.5107 14.6789C15.5004 14.6761 15.4902 14.6743 15.48 14.6734C15.4697 14.6715 15.4595 14.6706 15.4484 14.6706C15.4363 14.6706 15.4251 14.6697 15.413 14.6706C15.4046 14.6706 15.3963 14.6724 15.387 14.6734C15.374 14.6752 15.3609 14.6761 15.3479 14.6789C15.3442 14.6789 15.3405 14.6817 15.3368 14.6826C15.2968 14.6928 15.2586 14.7086 15.2233 14.7318L12.3311 16.4363C12.1265 16.5569 11.8735 16.5569 11.6689 16.4363L8.77673 14.7318C8.74139 14.7086 8.70326 14.6928 8.66327 14.6826C8.65955 14.6817 8.65583 14.6799 8.65211 14.6789C8.63909 14.6761 8.62607 14.6752 8.61305 14.6734C8.60468 14.6724 8.59631 14.6715 8.58701 14.6706C8.57492 14.6706 8.56376 14.6706 8.55167 14.6706C8.54144 14.6706 8.53029 14.6724 8.52006 14.6734C8.50983 14.6752 8.4996 14.6771 8.48937 14.6789C8.47728 14.6817 8.46612 14.6854 8.45403 14.6891C8.44473 14.6919 8.43636 14.6956 8.42706 14.6993C8.41404 14.7049 8.40102 14.7123 8.38893 14.7198C8.38242 14.7235 8.37498 14.7272 8.36847 14.7318C8.34987 14.7448 8.33127 14.7587 8.31546 14.7754C8.29965 14.7921 8.28477 14.8098 8.27175 14.8283C8.2671 14.8348 8.26431 14.8413 8.25966 14.8487C8.25222 14.8617 8.24478 14.8738 8.2392 14.8868C8.23548 14.8951 8.23269 14.9044 8.22897 14.9127C8.22525 14.9248 8.22153 14.9359 8.21874 14.948C8.21595 14.9582 8.21409 14.9684 8.21316 14.9786C8.2113 14.9888 8.21037 15 8.21037 15.0102C8.21037 15.0213 8.20944 15.0334 8.21037 15.0445C8.21037 15.0538 8.21223 15.0621 8.21316 15.0714C8.21502 15.0844 8.21595 15.0974 8.21874 15.1095C8.21967 15.115 8.22153 15.1197 8.22339 15.1243C8.23455 15.167 8.25315 15.2069 8.28012 15.244L11.4681 19.7265C11.7275 20.0911 12.2706 20.0911 12.5301 19.7265L15.718 15.244C15.745 15.2069 15.7636 15.167 15.7748 15.1243C15.7757 15.1197 15.7785 15.1141 15.7794 15.1095C15.7822 15.0965 15.7831 15.0844 15.785 15.0714C15.7859 15.0621 15.7869 15.0538 15.7878 15.0445C15.7878 15.0334 15.7878 15.0213 15.7878 15.0102H15.7897Z" fill="#6B8AFF"></path></svg></svg>
+                                <span class="chain-name">Ethereum</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                        </a>     -->
+
+                        <!-- <a href="#" onclick="changeChain('base', this)">
+                            <div class="btnlogo">
+                                <svg id="Base" alt="Base Logo" width="20" height="20" style="margin-right: 12px; width: 20px; height: 20px;"><rect rx="6" fill="#F9F9F9" width="20" height="20"></rect><rect rx="6" fill="#0052FF33" width="20" height="20"></rect><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 16.4183 16.412 20 11.986 20C7.78693 20 4.34212 16.7761 4 12.6725H14.5926V11.3275H4C4.34212 7.22393 7.78693 4 11.986 4C16.412 4 20 7.58171 20 12Z" fill="#0052FF"></path></svg></svg>
+                                <span class="chain-name">Base Chain</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                            
+                          
+                        </a>                      -->
+                        <!-- <a href="#" onclick="changeChain('bnb', this)">
+                            <div class="btnlogo">
+                                <svg id="bnb" alt="bnb Logo" width="20" height="20" style="margin-right: 12px; width: 20px; height: 20px;"><rect rx="6" fill="#F9F9F9" width="20" height="20"></rect><rect rx="6" fill="#EAB20033" width="20" height="20"></rect><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.279 11.3421L16.2704 9.48437H16.2771L14.6992 8.55553L11.9954 10.1498L9.30786 8.55553L7.73094 9.48437V11.3421L10.4348 12.9286V16.1094L12.005 17.0296L13.5752 16.1094V12.9286L16.279 11.3421ZM11.9963 3.79688L7.72998 6.31226L9.30017 7.24111L11.9963 5.64687L14.7002 7.24111L16.2704 6.31226L11.9963 3.79688ZM6.60375 15.1726L6.5951 11.9995L5.02586 11.0716V16.1101L9.2999 18.6168V16.7591L6.60375 15.1726ZM6.5951 10.6755V8.82644L8.17298 7.8976L6.5951 6.96875L5.0249 7.8976V9.74663L6.5951 10.6755ZM11.9961 6.96875L10.4259 7.8976L11.9961 8.82644L13.5739 7.8976L11.9961 6.96875ZM9.29968 13.5861L7.72949 12.6572V14.5149L9.29968 15.4351V13.5861ZM11.9958 18.3534L10.4256 17.4245V19.2736L11.9958 20.2024L13.5737 19.2736V17.4245L11.9958 18.3534ZM17.3958 6.96875L15.8256 7.8976L17.3958 8.82644V10.6755L18.9737 9.74663V7.8976L17.3958 6.96875ZM18.9747 11.0707L17.4045 11.9995L17.3958 15.1726L14.7006 16.7582V18.6159L18.9747 16.1091V11.0707ZM16.2699 14.5149L14.6997 15.4351V13.5861L16.2699 12.6572V14.5149Z" fill="#EAB200"></path></svg></svg>
+                                <span class="chain-name">BNB Chain</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                        </a>                       -->
+                        <!-- <a href="#" onclick="changeChain('solana',this)">
+                            <div class="btnlogo">
+                                <svg id="solana" alt="solana Logo" width="20" height="20" style="margin-right: 12px; width: 20px; height: 20px;">
+                                    <rect rx="6" fill="#F9F9F9" width="20" height="20"></rect>
+                                    <rect rx="6" fill="#0aebf733" width="20" height="20"></rect>
+                                    <svg width="14" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="3px" y="3px"
+                                	 viewBox="0 0 397.7 311.7" style="enable-background:new 0 0 397.7 311.7;" xml:space="preserve">
+                                            <style type="text/css">
+                                        	.st0{fill:url(#SVGID_1_);}
+                                        	.st1{fill:url(#SVGID_1_);}
+                                        	.st2{fill:url(#SVGID_3_);}
+                                            </style>
+                                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="360.8791" y1="351.4553" x2="141.213" y2="-69.2936" gradientTransform="matrix(1 0 0 -1 0 314)">
+                                    <stop  offset="0" style="stop-color:#00FFA3"/>
+                                    <stop  offset="1" style="stop-color:#DC1FFF"/>
+                                </linearGradient>
+                                <path class="st2" d="M64.6,237.9c2.4-2.4,5.7-3.8,9.2-3.8h317.4c5.8,0,8.7,7,4.6,11.1l-62.7,62.7c-2.4,2.4-5.7,3.8-9.2,3.8H6.5
+                                    c-5.8,0-8.7-7-4.6-11.1L64.6,237.9z"/>
+                                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="264.8291" y1="401.6014" x2="45.163" y2="-19.1475" gradientTransform="matrix(1 0 0 -1 0 314)">
+                                    <stop  offset="0" style="stop-color:#00FFA3"/>
+                                    <stop  offset="1" style="stop-color:#DC1FFF"/>
+                                </linearGradient>
+                                <path class="st2" d="M64.6,3.8C67.1,1.4,70.4,0,73.8,0h317.4c5.8,0,8.7,7,4.6,11.1l-62.7,62.7c-2.4,2.4-5.7,3.8-9.2,3.8H6.5
+                                    c-5.8,0-8.7-7-4.6-11.1L64.6,3.8z"/>
+                                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="312.5484" y1="376.688" x2="92.8822" y2="-44.061" gradientTransform="matrix(1 0 0 -1 0 314)">
+                                    <stop  offset="0" style="stop-color:#00FFA3"/>
+                                    <stop  offset="1" style="stop-color:#DC1FFF"/>
+                                </linearGradient>
+                                <path class="st2" d="M333.1,120.1c-2.4-2.4-5.7-3.8-9.2-3.8H6.5c-5.8,0-8.7,7-4.6,11.1l62.7,62.7c2.4,2.4,5.7,3.8,9.2,3.8h317.4
+                                    c5.8,0,8.7-7,4.6-11.1L333.1,120.1z"/>
+                                    </svg>
+                                </svg>
+                                
+                                
+                                <span class="chain-name">Solana</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                        </a>                       -->
+                        <!-- <a href="#" onclick="changeChain('avalanche',this)">
+                            <div class="btnlogo">
+                                <svg id="Avalanche" alt="avalanche Logo" width="20" height="20" style="margin-right: 12px; width: 20px; height: 20px;"><rect rx="6" fill="#F9F9F9" width="20" height="20"></rect><rect rx="6" fill="#E8414233" width="20" height="20"></rect><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2121_13838)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 18.0688H5.8578C5.33754 18.0688 5.08056 18.0688 4.92387 17.9685C4.75462 17.8588 4.6512 17.677 4.63867 17.4764C4.62925 17.2916 4.75776 17.0659 5.01475 16.6146L11.128 5.83913C11.3881 5.38156 11.5197 5.15278 11.6858 5.06816C11.8645 4.97728 12.0776 4.97728 12.2562 5.06816C12.4223 5.15278 12.554 5.38156 12.8141 5.83913L14.0709 8.03295L14.0773 8.04415C14.3582 8.53503 14.5007 8.78396 14.5629 9.04523C14.6318 9.33043 14.6318 9.63129 14.5629 9.9165C14.5002 10.1797 14.3592 10.4305 14.074 10.9288L10.8628 16.6052L10.8545 16.6197C10.5717 17.1146 10.4284 17.3655 10.2298 17.5547C10.0135 17.7616 9.75339 17.912 9.46819 17.9967C9.20807 18.0688 8.91661 18.0688 8.33367 18.0688ZM14.5861 18.0688H18.1337C18.6571 18.0688 18.9204 18.0688 19.0772 17.9655C19.2464 17.8558 19.3529 17.6708 19.3624 17.4703C19.3714 17.2914 19.2457 17.0745 18.9994 16.6494C18.9909 16.635 18.9824 16.6202 18.9738 16.6052L17.1967 13.5652L17.1765 13.531C16.9268 13.1087 16.8007 12.8955 16.6388 12.8131C16.4603 12.7222 16.2502 12.7222 16.0716 12.8131C15.9086 12.8977 15.777 13.1202 15.5169 13.5684L13.7462 16.6084L13.7401 16.6188C13.4809 17.0663 13.3513 17.2899 13.3607 17.4734C13.3732 17.674 13.4766 17.8588 13.6459 17.9685C13.7994 18.0688 14.0627 18.0688 14.5861 18.0688Z" fill="#E84142"></path></g><defs><clipPath id="clip0_2121_13838"><rect width="24" height="24" rx="8" fill="white"></rect></clipPath></defs></svg></svg>
+                                <span class="chain-name">Avalanche</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                        </a>                      -->
+                        <a href="#" onclick="changeChain('tron',this)">
+                            <div class="btnlogo">
+                                <svg id="tron" alt="tron Logo" width="24" height="24" style="margin-right: 12px; width: 24px; height: 24px;"><rect rx="6" fill="#F9F9F9" width="24" height="24"></rect><rect rx="6" fill="
+                                    #0a6bf266" width="24" height="24"></rect>
+                                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="2" y="2" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve"><script xmlns=""/>
+                                    <style type="text/css">
+                                        .st0{fill:#ff0000;}
+                                        .st1{transform: scale(0.6);transform-origin: center; fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                                    </style>
+                                    <circle class="st0" cx="28" cy="28" r="28"/>
+                                    <path class="st1"  d="M61.55,19.28c-3-2.77-7.15-7-10.53-10l-.2-.14a3.82,3.82,0,0,0-1.11-.62l0,0C41.56,7,3.63-.09,2.89,0a1.4,1.4,0,0,0-.58.22L2.12.37a2.23,2.23,0,0,0-.52.84l-.05.13v.71l0,.11C5.82,14.05,22.68,53,26,62.14c.2.62.58,1.8,1.29,1.86h.16c.38,0,2-2.14,2-2.14S58.41,26.74,61.34,23a9.46,9.46,0,0,0,1-1.48A2.41,2.41,0,0,0,61.55,19.28ZM36.88,23.37,49.24,13.12l7.25,6.68Zm-4.8-.67L10.8,5.26l34.43,6.35ZM34,27.27l21.78-3.51-24.9,30ZM7.91,7,30.3,26,27.06,53.78Z"/>
+                                    <script xmlns=""/></svg>
+                                </svg>
+                                <span class="chain-name">Tron</span>  
+                                <span class="checkmark" style="display: none;">&#10003;</span> 
+                            </div> 
+                        </a>
+                    </div>
+                </div> 
+                <div class="child-div flex items-center gap-x-4 hidden md:flex">             
+                    <a href="https://sun.io/#/sun_swap/v2?t0=T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb&t1=TN29FkCKL8dFMSZ4uian61to5dLi9RoaRz&type=swap" alt="Sunswap Link">
+                        <button class="border-solid border-[1px] border-lyllw/70 rounded-lg bg-gradient-to-tr from-yllw/10 to-lyllw/10 font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 flex items-center">
+                           <img class=" btnsize" src="img/sunpumplogo.png" alt="Logo">
+                            <span style="margin-right:0.5rem;margin-left: 0.5rem;">BUY</span>
+                        </button>
+                       
+                        <!--<div class="parent-div flex gap-x-4 items-center">
+                            <div class="child-div dropdown">
+                                <button class="dropbtn  bg-gradient-to-tr from-yllw/10 to-lyllw/10 font-semibold hover:scale-[1.05] hover:from-yllw/60 hover:to-lyllw/60 transition-all ease-in-out duration-300" id="selectedChain">
+                                    <div class="btnlogo btnsize">
+                                        <svg id="tron" alt="tron" width="24" height="24" style="margin-right: 12px; width: 25px; height: 25px;"><rect rx="6" fill="#F9F9F9" width="24" height="24"></rect><rect rx="6" fill="
+                                            #0a6bf266" width="24" height="24"></rect>
+                                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="2" y="2" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve"><script xmlns=""/>
+                                            <style type="text/css">
+                                                .st0{fill:#ff0000;}
+                                                .st1{transform: scale(0.6);transform-origin: center; fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                                            </style>
+                                            <circle class="st0" cx="28" cy="28" r="28"/>
+                                            <path class="st1"  d="M61.55,19.28c-3-2.77-7.15-7-10.53-10l-.2-.14a3.82,3.82,0,0,0-1.11-.62l0,0C41.56,7,3.63-.09,2.89,0a1.4,1.4,0,0,0-.58.22L2.12.37a2.23,2.23,0,0,0-.52.84l-.05.13v.71l0,.11C5.82,14.05,22.68,53,26,62.14c.2.62.58,1.8,1.29,1.86h.16c.38,0,2-2.14,2-2.14S58.41,26.74,61.34,23a9.46,9.46,0,0,0,1-1.48A2.41,2.41,0,0,0,61.55,19.28ZM36.88,23.37,49.24,13.12l7.25,6.68Zm-4.8-.67L10.8,5.26l34.43,6.35ZM34,27.27l21.78-3.51-24.9,30ZM7.91,7,30.3,26,27.06,53.78Z"/>
+                                            <script xmlns=""/></svg>
+                                        </svg>
+                                    </div> 
+                                    <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                                </button> -->
+                    
+                    
+                    
+                    </a>
+                        <img src="img/nvidia_logo.png" class="flip-coinflip" alt="NVIDIA sticker gif">
+                </div>
+                    </div>
+        </div>
+    </nav>
+<div class="w-full h-auto relative bg-1">
+<div class="w-full  h-auto relative pb-24 z-40 " style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+  <div class="max-w-screen-xl mx-auto p-4 flex flex-col gap-y-12 items-center justify-center relative z-20">
+    <!-- <div class="flex items-center justify-center flex-col md:flex-row gap-y-8" style=" margin-top:-5rem;">
+              <img src="img/NVIDIA_Sticker.gif" class="w-full lg:w-1/2 flex justify-center items-center" alt="NVIDIA sticker gif">
+              <div class="flex flex-col text-white w-full lg:w-1/2 items-center lg:items-start">
+                <p class="font-primary font-semibold tracking-[0.5rem]">A new benchmark:</p>
+                <p class="font-primary text-7xl lg:text-9xl bg-gradient-to-r text-white text-stroke text-transparent pointer-events-none">NVIDIA</p>
+                <p class="font-primary text-3xl tracking-[0.5rem] text-center lg:text-left">The <b>NVIDIA Prophet</b> - leading the way to generational wealth</p>
+             </div>
+    </div>
+  
+        <p class="font-primary text-2xl tracking-[0.5rem] text-center" style="margin-top: 2rem; opacity: 1; transform: none;">one of the oldest narratives in crypto and a symbol of a decade's revolution</p>
+   
+    <div class="w-3/4 h-[1px] bg-white/50" style="width: 100%;"></div> -->
+    
+    <!-- <div id="baseView" class="blockchainView">
+        <h2 class="flex flex-col items-center justify-center">Base Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12">
+            <button  
+            class="copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">0x9e7387356bc4bdBFB2e3324D38487b2438F23745</p>
+        </button>
+        <p  class="notification text-white-500 text-xl top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://uniswap.org" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Uniswap</p><img class="uniswap-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Uniswap_Logo.svg/900px-Uniswap_Logo.svg.png?20210117065440" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io/app/en/base/pair-explorer/0x3762d13fe04566a3733f5cf93cd476c0a110de31?t=1714736510340"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div>   
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA PROPHET</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/realNVIDIA.png" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">Who's NVIDIA?!</h1>
+            <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic
+                clash, culminating in the highly anticipated NVIDIA event. Inspired by this monumental showdown, NVIDIA, the iconic meme from 
+                the "Maya the Bee" sagas, has emerged as a symbol of this epic fight. <b>NVIDIA</b> is more than just a memecoin; it's a 
+                tribute to the revolution of Ethereum surpassing Bitcoin, sparking the "Clash of the Crypto Giants". Join us as we celebrate this pivotal 
+                moment in crypto history, where legends collide and a new era of possibilities is born. Together, let's ignite the flame of innovation
+                and witness the dawn of a new crypto legacy. 
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="t.me/thisisNVIDIA" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/thisisNVIDIA"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="https://about.x.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><img src="img/NVIDIA.png" alt="real NVIDIA image"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">What's the NVIDIA?!</h1>
+                <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic clash, leading to the 
+                    much-anticipated <b>NVIDIA</b>. This event symbolizes a revolutionary shift were Ethereum will surpass Bitcoin, redefining the landscape
+                    of the crypto world. The NVIDIA is not just a technical milestone; it's a testament to innovation, community strength and 
+                    the relentless pursuit of progress. And as these two giants of the crypto world continue thier epic battle, we stand on the brink of a new era. Join us 
+                    when the foundations of traditional money are challenged and the future of finance is rewritten!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.blockchaincenter.net/en/NVIDIA/" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Live Chart</p><img class="bcc-logo" src="img/Blockchaincenter.net Logo.png" alt="Blockchaincenter Icon">      
+            </button></a></div>
+        </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">TOKENOMICS</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/tokenomics.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">T T T T Tokenomics?!</h1>
+            <ul class="text-2xl" style="opacity: 1; transform: none; list-style-type: disc">
+                <li style="margin-top: 10px;">No Taxes, no Jeets! We've got your back so you can focus on what really matters: making bank!</li>
+                <li style="margin-top: 10px;">Our contract's renounced, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.</li>
+                <li style="margin-top: 10px;">Liquidity? Oh, we've burned that too (100%). Sit back, relax, and enjoy the ride! Edit: Burn at 1M Mcap.</li>
+            </ul>
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="https://basescan.org/tx/0x606d1a04ab614ceeb03308b41c97285e95a03efb4a300aa1304093a6ff4b09aa" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Renounced</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+        <a
+        href="https://beta.uncx.network/lockers/univ2/chain/8453/address/0x3762d13fe04566a3733f5cf93cd476c0a110de31/lock/0xc4e637d37113192f4f1f060daebd7758de7f41310x3762d13fe04566a3733f5cf93cd476c0a110de31310" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Liqu Locked</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+    </div>
+    </div>
+</div> -->
+
+    <!-- <div id="ethereumView" class="blockchainView" style="display: none;">
+
+        <div class="flex items-center justify-center flex-col md:flex-row gap-y-8" style=" margin-top:-5rem;">
+            <img src="img/NVIDIA_Ethereum.gif" class="w-full lg:w-1/2 flex justify-center items-center" alt="NVIDIA sticker gif">
+            <div class="flex flex-col text-white w-full lg:w-1/2 items-center lg:items-start">
+              <p class="font-primary font-semibold tracking-[0.5rem]">A new benchmark:</p>
+              <p class="font-primary text-7xl lg:text-9xl bg-gradient-to-r text-white text-stroke text-transparent pointer-events-none">NVIDIA</p>
+              <p class="font-primary text-3xl tracking-[0.5rem] text-center lg:text-left">The <b>NVIDIA Prophet</b> - leading the way to generational wealth</p>
+           </div>
+  </div>
+
+      <p class="font-primary text-2xl tracking-[0.5rem] text-center" style="margin-top: 2rem; opacity: 1; transform: none;">one of the oldest narratives in crypto and a symbol of a decade's revolution</p>
+ 
+  <div class="w-3/4 h-[1px] bg-white/50" style="width: 100%;"></div>
+  <div></div>
+
+        <h2 class="flex flex-col items-center justify-center"style="margin-top: 2rem">Ethereum Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class="copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">0xTheFinalShowdownStayTuned</p>
+        </button>
+        <p  class="notification text-white-500 text-xl top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://uniswap.org" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Uniswap</p><img class="uniswap-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Uniswap_Logo.svg/900px-Uniswap_Logo.svg.png?20210117065440" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div>
+
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA PROPHET</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/realNVIDIA.png" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">Who's NVIDIA?!</h1>
+            <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic
+                clash, culminating in the highly anticipated NVIDIA event. Inspired by this monumental showdown, NVIDIA, the iconic meme from 
+                the "Maya the Bee" sagas, has emerged as a symbol of this epic fight. <b>NVIDIA</b> is more than just a memecoin; it's a 
+                tribute to the revolution of Ethereum surpassing Bitcoin, sparking the "Clash of the Crypto Giants". Join us as we celebrate this pivotal 
+                moment in crypto history, where legends collide and a new era of possibilities is born. Together, let's ignite the flame of innovation
+                and witness the dawn of a new crypto legacy. 
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="https://t.me/thisisNVIDIA" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/thisisNVIDIA"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="https://about.x.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><img src="img/NVIDIA.png" alt="real NVIDIA image"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">What's the NVIDIA?!</h1>
+                <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic clash, leading to the 
+                    much-anticipated <b>NVIDIA</b>. This event symbolizes a revolutionary shift were Ethereum will surpass Bitcoin, redefining the landscape
+                    of the crypto world. The NVIDIA is not just a technical milestone; it's a testament to innovation, community strength and 
+                    the relentless pursuit of progress. And as these two giants of the crypto world continue thier epic battle, we stand on the brink of a new era. Join us 
+                    when the foundations of traditional money are challenged and the future of finance is rewritten!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.blockchaincenter.net/en/NVIDIA/" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Live Chart</p><img class="bcc-logo" src="img/Blockchaincenter.net Logo.png" alt="Blockchaincenter Icon">      
+            </button></a></div>
+        </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">TOKENOMICS</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/tokenomics.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">T T T T Tokenomics?!</h1>
+            <ul class="text-2xl" style="opacity: 1; transform: none; list-style-type: disc">
+                <li style="margin-top: 10px;">No Taxes, no Jeets! We've got your back so you can focus on what really matters: making bank!</li>
+                <li style="margin-top: 10px;">Our contract's renounced, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.</li>
+                <li style="margin-top: 10px;">Liquidity? Oh, we've burned that too (100%). Sit back, relax, and enjoy the ride!</li>
+            </ul>
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Renounced</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+        <a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Liqu Locked</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+    </div>
+    </div>
+    </div> -->
+
+
+    <!-- <div id="bnbView" class="blockchainView" style="display: none;">
+        <h2 class="flex flex-col items-center justify-center">BNB Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class=" copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">0xSTAYTUNED</p>
+        </button>
+        <p  class="notification text-white-500 text-xl  top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://uniswap.org" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Uniswap</p><img class="uniswap-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Uniswap_Logo.svg/900px-Uniswap_Logo.svg.png?20210117065440" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div> 
+
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA PROPHET</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/realNVIDIA.png" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">Who's NVIDIA?!</h1>
+            <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic
+                clash, culminating in the highly anticipated NVIDIA event. Inspired by this monumental showdown, NVIDIA, the iconic meme from 
+                the "Maya the Bee" sagas, has emerged as a symbol of this epic fight. <b>NVIDIA</b> is more than just a memecoin; it's a 
+                tribute to the revolution of Ethereum surpassing Bitcoin, sparking the "Clash of the Crypto Giants". Join us as we celebrate this pivotal 
+                moment in crypto history, where legends collide and a new era of possibilities is born. Together, let's ignite the flame of innovation
+                and witness the dawn of a new crypto legacy. 
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="t.me/thisisNVIDIA" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/thisisNVIDIA"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="https://about.x.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><img src="img/NVIDIA.png" alt="real NVIDIA image"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">What's the NVIDIA?!</h1>
+                <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic clash, leading to the 
+                    much-anticipated <b>NVIDIA</b>. This event symbolizes a revolutionary shift were Ethereum will surpass Bitcoin, redefining the landscape
+                    of the crypto world. The NVIDIA is not just a technical milestone; it's a testament to innovation, community strength and 
+                    the relentless pursuit of progress. And as these two giants of the crypto world continue thier epic battle, we stand on the brink of a new era. Join us 
+                    when the foundations of traditional money are challenged and the future of finance is rewritten!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.blockchaincenter.net/en/NVIDIA/" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Live Chart</p><img class="bcc-logo" src="img/Blockchaincenter.net Logo.png" alt="Blockchaincenter Icon">      
+            </button></a></div>
+        </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">TOKENOMICS</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/tokenomics.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">T T T T Tokenomics?!</h1>
+            <ul class="text-2xl" style="opacity: 1; transform: none; list-style-type: disc">
+                <li style="margin-top: 10px;">No Taxes, no Jeets! We've got your back so you can focus on what really matters: making bank!</li>
+                <li style="margin-top: 10px;">Our contract's renounced, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.</li>
+                <li style="margin-top: 10px;">Liquidity? Oh, we've burned that too (100%). Sit back, relax, and enjoy the ride! Edit: Burn at 1M Mcap.</li>
+            </ul>
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Renounced</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+        <a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Liqu Locked</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+    </div>
+    </div>
+</div> -->
+
+    <!-- <div id="solanaView" class="blockchainView" style="display: none;">
+        <h2 class="flex flex-col items-center justify-center">Solana Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class="copy-button py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">0xStayTunedonTwitter</p>
+        </button>
+        <p  class="notification text-white-500 text-xl  top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://raydium.io" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Raydium</p><img class="raydium-logo" src="https://seeklogo.com/images/R/raydium-ray-logo-D4B61E1A42-seeklogo.com.png" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div> 
+
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA PROPHET</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/realNVIDIA.png" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">Who's NVIDIA?!</h1>
+            <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic
+                clash, culminating in the highly anticipated NVIDIA event. Inspired by this monumental showdown, NVIDIA, the iconic meme from 
+                the "Maya the Bee" sagas, has emerged as a symbol of this epic fight. <b>NVIDIA</b> is more than just a memecoin; it's a 
+                tribute to the revolution of Ethereum surpassing Bitcoin, sparking the "Clash of the Crypto Giants". Join us as we celebrate this pivotal 
+                moment in crypto history, where legends collide and a new era of possibilities is born. Together, let's ignite the flame of innovation
+                and witness the dawn of a new crypto legacy. 
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="t.me/thisisNVIDIA" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/thisisNVIDIA"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="https://about.x.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><img src="img/NVIDIA.png" alt="real NVIDIA image"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">What's the NVIDIA?!</h1>
+                <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic clash, leading to the 
+                    much-anticipated <b>NVIDIA</b>. This event symbolizes a revolutionary shift were Ethereum will surpass Bitcoin, redefining the landscape
+                    of the crypto world. The NVIDIA is not just a technical milestone; it's a testament to innovation, community strength and 
+                    the relentless pursuit of progress. And as these two giants of the crypto world continue thier epic battle, we stand on the brink of a new era. Join us 
+                    when the foundations of traditional money are challenged and the future of finance is rewritten!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.blockchaincenter.net/en/NVIDIA/" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Live Chart</p><img class="bcc-logo" src="img/Blockchaincenter.net Logo.png" alt="Blockchaincenter Icon">      
+            </button></a></div>
+        </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">TOKENOMICS</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/tokenomics.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">T T T T Tokenomics?!</h1>
+            <ul class="text-2xl" style="opacity: 1; transform: none; list-style-type: disc">
+                <li style="margin-top: 10px;">No Taxes, no Jeets! We've got your back so you can focus on what really matters: making bank!</li>
+                <li style="margin-top: 10px;">Our contract's renounced, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.</li>
+                <li style="margin-top: 10px;">Liquidity? Oh, we've burned that too (100%). Sit back, relax, and enjoy the ride! Edit: Burn at 1M Mcap.</li>
+            </ul>
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Renounced</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+        <a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Liqu Locked</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+    </div>
+    </div>
+    </div> -->
+
+
+    <!-- <div id="avalancheView" class="blockchainView" style="display: none;">
+        <h2 class="flex flex-col items-center justify-center">Avalanche Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class=" copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">0xSTAYTUNED</p>
+        </button>
+        <p  class="notification text-white-500 text-xl  top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://uniswap.org" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Uniswap</p><img class="uniswap-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Uniswap_Logo.svg/900px-Uniswap_Logo.svg.png?20210117065440" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div> 
+
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA PROPHET</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/realNVIDIA.png" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">Who's NVIDIA?!</h1>
+            <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic
+                clash, culminating in the highly anticipated NVIDIA event. Inspired by this monumental showdown, NVIDIA, the iconic meme from 
+                the "Maya the Bee" sagas, has emerged as a symbol of this epic fight. <b>NVIDIA</b> is more than just a memecoin; it's a 
+                tribute to the revolution of Ethereum surpassing Bitcoin, sparking the "Clash of the Crypto Giants". Join us as we celebrate this pivotal 
+                moment in crypto history, where legends collide and a new era of possibilities is born. Together, let's ignite the flame of innovation
+                and witness the dawn of a new crypto legacy. 
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="t.me/thisisNVIDIA" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/thisisNVIDIA"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="https://about.x.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE NVIDIA</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><img src="img/NVIDIA.png" alt="real NVIDIA image"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">What's the NVIDIA?!</h1>
+                <p class="text-2xl" style="opacity: 1; transform: none;">For years, Bitcoin and Ethereum have been locked in a dramatic clash, leading to the 
+                    much-anticipated <b>NVIDIA</b>. This event symbolizes a revolutionary shift were Ethereum will surpass Bitcoin, redefining the landscape
+                    of the crypto world. The NVIDIA is not just a technical milestone; it's a testament to innovation, community strength and 
+                    the relentless pursuit of progress. And as these two giants of the crypto world continue thier epic battle, we stand on the brink of a new era. Join us 
+                    when the foundations of traditional money are challenged and the future of finance is rewritten!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.blockchaincenter.net/en/NVIDIA/" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Live Chart</p><img class="bcc-logo" src="img/Blockchaincenter.net Logo.png" alt="Blockchaincenter Icon">      
+            </button></a></div>
+        </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">TOKENOMICS</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/tokenomics.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="opacity: 1; transform: none;">T T T T Tokenomics?!</h1>
+            <ul class="text-2xl" style="opacity: 1; transform: none; list-style-type: disc">
+                <li style="margin-top: 10px;">No Taxes, no Jeets! We've got your back so you can focus on what really matters: making bank!</li>
+                <li style="margin-top: 10px;">Our contract's renounced, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.</li>
+                <li style="margin-top: 10px;">Liquidity? Oh, we've burned that too (100%). Sit back, relax, and enjoy the ride! Edit: Burn at 1M Mcap.</li>
+            </ul>
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Renounced</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+        <a
+        href="" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Liqu Locked</p><img class="bcc-logo" src="https://avatars.githubusercontent.com/u/108554348?v=4" alt="Blockchaincenter Icon">      
+        </button></a>
+    </div>
+    </div>
+    </div> -->
+
+    <div id="tronView" class="blockchainView" style="display: block;">
+
+        <div class="flex items-center justify-center flex-col md:flex-row gap-y-8" style=" margin-top:-5rem;">
+            <img src="img/nvidia_justin.gif" class="w-full lg:w-1/2 flex justify-center items-center" alt="NVIDIA sticker gif">
+            <div class="flex flex-col text-white w-full lg:w-1/2 items-center lg:items-start">
+              <p class="font-primary font-semibold tracking-[0.5rem]">Indroducing:</p>
+              <p class="font-primary text-7xl lg:text-9xl bg-gradient-to-r text-white text-stroke-ton text-transparent pointer-events-none">NVIDIA<span class="text-2xl">on Tron</span></p>
+              <p class="font-primary text-3xl tracking-[0.5rem] text-center lg:text-left"> JUSTIN SUN'S PET PEACOCK</p>
+           </div>
+  </div>
+
+      <p class="font-primary text-2xl tracking-[0.5rem] text-center" style="margin-top: 2rem; opacity: 1; transform: none;">
+        As Revealed in The Most recent post on the Tron Chain Founder's Chinese TikTok Account, NVIDIA is here as the one, true LEGIT PET OF Justin Sun Who Is Ready To Become The ultimate mascot of today's hottest network!</p>
+ 
+  <div class="w-3/4 h-[1px] bg-white/50" style="margin-top: 2rem; width: 100%;"></div>
+ 
+
+        <h2 class="flex flex-col items-center justify-center"style="margin-top: 2rem">Contract</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class="copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">TN29FkCKL8dFMSZ4uian61to5dLi9RoaRz</p>
+        </button>
+        <p  class="notification text-white-500 text-xl  top-0 right-0 z-155 duration-300 transition-all ease-in-out p-5 bg-lyllw/70 m-5 px-20 rounded-xl" style="display: none">Address Copied</p>
+        <div class="flex flex-col md:flex-row gap-x-4 gap-y-5" style="opacity: 1; transform: none;"><a
+                href="https://sun.io/#/sun_swap/v2?t0=T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb&t1=TN29FkCKL8dFMSZ4uian61to5dLi9RoaRz&type=swap" target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Buy on Sun.io</p><img class="stonfi-logo" src="img/sunpumplogo.png" alt="Uniswap Icon">
+                </button></a><a
+                href="https://www.dextools.io/app/en/tron/pair-explorer/TSmpZMUjMqPsjRhcmRN6WwnDcRf5Mfzw4n?t=1724586262450"
+                target="_blank" rel="noopener noreferrer"><button
+                    class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                    <p>Dextools Chart</p><img class="dextools-logo" src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Dextools Icon">
+                </button></a></div>
+    </div> 
+
+    <div class="w-full h-auto  z-10 relative" id="about">
+    <div class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">THE STORY</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+            <div><img src="img/nvidia_alone.gif" alt="real NVIDIA image"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-stroke-sm text-5xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; opacity: 1; transform: rotate(5deg);">This is the Tron Token!</h1>
+            <p class="text-3xl" style="opacity: 1; transform: none;"> $NVIDIA is a new token launched on the Tron Chain, inspired by Tron Founder Justin Sun's pet baby peacock, as revealed in his recent Douyin post. The Tron Chain has been on fire lately, with a surge in activity and innovative projects making waves across the crypto space. $NVIDIA taps into this momentum, leveraging the unique story behind Sun's pet to capture the community's imagination. With its strong ties to Tron's visionary founder and the current hype around the network, $NVIDIA has the potential to become the anchor coin of the Tron ecosystem, offering stability and growth opportunities in a rapidly evolving market. This token could solidify its place as a key player in the Tron Chain's ongoing success.
+                </p>
+            <div class="rounded-xl drop-shado-sm">
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+        href="https://t.me/nvidia_cto" target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>Telegram</p><img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon">
+        </button></a><a
+        href="https://twitter.com/nvidia_cto"
+        target="_blank" rel="noopener noreferrer"><button
+            class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+            <p>X.com</p><img class="x-logo" src="img/twitter-x-seeklogo-3.svg" alt="twitter.com Icon">
+        </button></a></div>
+    </div>
+        <div class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">JUSTIN'S PEACOCK PET</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                <div><video src="img/file.mp4" autoplay controls loop alt="real NVIDIA image">Your browser does not support the videotag.</video></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-stroke-sm text-5xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; opacity: 1; transform: rotate(-10deg); margin-bottom: 2rem;">Real Post! Real Pet</h1>
+                <p class="text-3xl" style="opacity: 1; transform: none;"> Unlike other Tron Coins pretending to be justin sun's real pets, $NVIDIA is real.  None other than Justin himself posted about Nvidia on his Duoyin (Chinese TikTOK) account, even going as far as sharing some life lessons he learned while caring for the baby peacock.  Furthermore, Justin Sun named the baby peacock himself.  NVIDIA isn't a made-up name.  It is the actual real name that Mr. Sun has given to the fowl that has captured his heart.  $NVIDIA IS NOT A LARP, FOLKS.  It is 100% LEGIT!
+                    </p>
+                <div class="rounded-xl drop-shado-sm">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-4 items-center justify-center mt-5 mx-auto" style="opacity: 1; transform: none;"><a
+            href="https://www.douyin.com/video/7371804211564121355?previous_page=app_code_link" target="_blank" rel="noopener noreferrer"><button
+                class="text-lyllw uppercase text-xl px-4 py-3 border-solid border-[1px] border-lyllw/70 rounded-full button flex gap-x-3 items-center font-semibold hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 mx-auto">
+                <p>NVIDIA Pet Post</p>  
+            </button></a></div>
+        </div>
+        <div class="max-w-screen-xl mx-auto p-4 ">
+            <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+                <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                    style="opacity: 1; transform: none;">NVIDIA</p>
+                <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+                <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">MOONBAG</p>
+            </div>
+            <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+                style="opacity: 1;">
+                <div class="flex flex-col items-center justify-center w-1/2" style="opacity: 1;">
+                    <div>
+                        <div class="flex items-center justify-center w-full">
+                        <img src="img/sunpumplogo.png" style="width:60%; height:auto;" alt="real NVIDIA image"></div></div>
+
+                </div>
+                <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left" >
+                    <h1 class="text-stroke-sm text-5xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; opacity: 1; transform: rotate(5deg);">How to Buy?</h1>
+                    <p class="text-3xl" style="opacity: 1; transform: none;"><h1 class="text-center text-stroke-sm text-4xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; transform: rotate(2deg);">1.</h1><p class="text-3xl" style="opacity: 1; transform: none;">Install and set-up the TronLink Wallet for IOS, Android or Chrome Browser extension</p>
+                    <h1 class="text-center text-stroke-sm text-6xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; transform: rotate(-2deg);">2.</h1><p class="text-3xl" style="opacity: 1; transform: none;">Buy $TRX from any exchange (e.g. Binance) and transfer to your TronLink walletadress</p><h1 class="text-center text-stroke-sm text-4xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; transform: rotate(2deg)">3.</h1><p class="text-3xl" style="opacity: 1; transform: none;"> Go to Sun.io. Connect your TronLink Wallet. That's it! Congratulations! 
+                        Now you're ready to swap for some $NVIDIA!
+                    </p>
+                    <div class="rounded-xl drop-shado-sm">
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+    </div> 
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">FAIRLAUNCH</p>
+    </div>
+    <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+        style="opacity: 1;">
+        <div class="flex flex-col  justify-center w-1/2" style="opacity: 1;">
+            <div class="Tokenomics"><img id="animatedGif" src="img/nvidia_1_1.gif" alt="NVIDIA TOKENOMICS"></div>
+        </div>
+        <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left" style="transform: rotate(-5deg);">
+            <h1 class="text-stroke-sm text-5xl" style="font-family: 'Permanent Marker', cursive; font-size: 80px; color: yellow; opacity: 1;">
+                Tokenomics?!
+            </h1>
+            <ul class="text-2xl" style="opacity: 1; list-style-type: disc;">
+                <li style="margin-top: 10px;">
+                    <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">
+                        No Taxes
+                    </span>, no Jeets! We've got your back so you can focus on what really matters: making bank!
+                </li>
+                <li style="margin-top: 10px;">
+                    Our contract's <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">renounced</span>, leaving no room for sneaky business. Like a superhero with a laser vision for shadiness, we've eliminated all the tricks.
+                </li>
+                <li style="margin-top: 10px;">
+                    Liquidity? Oh, we've <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">burned</span> that too <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">(100%)</span>. Sit back, relax, and enjoy the ride!
+                </li>
+                <li style="margin-top: 10px;">
+                Total Supply <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">1 Billion</span>
+                </li>
+            </ul>
+            <div class="rounded-xl drop-shado-sm"></div>
+        </div>
+        
+        </div>
+    </div>
+
+    <div id="tokenomics" class="max-w-screen-xl mx-auto p-4 ">
+        <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+            <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+                style="opacity: 1; transform: none;">NVIDIA</p>
+            <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+            <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">CTO FUNDRAISING</p>
+        </div>
+        <div class="bg-gradient-to-t from-yllw/50 to-lyllw/50  backdrop-blur-lg  flex flex-col lg:flex-row gap-y-8 items-center justify-center w-full p-12 rounded-2xl border-solid border-[1px] border-lyllw/70"
+            style="opacity: 1;">
+            <div class="flex flex-col  justify-center w-1/2" style="opacity: 1;">
+                <div class=""><img id="" src="img/nvidia_mcd.png" alt="NVIDIA Crowdfund"></div>
+            </div>
+            <div class="flex flex-col justify-center gap-y-4 w-full lg:w-1/2 text-center lg:text-left" style="transform: rotate(-5deg);">
+                <h1 class="text-stroke-sm text-5xl" style="font-family: 'Permanent Marker', cursive; font-size: 60px; color: yellow; opacity: 1;">
+                    When MC Donalds?
+                </h1>
+                <ul class="text-2xl" style="opacity: 1; list-style-type: disc;">
+                    <li style="margin-top: 10px;"> NVIDIA is the first ever memcoin on Tron with the 
+                        <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">
+                            Billion
+                        </span> Dollar Gen. 
+                    </li>
+                    <li style="margin-top: 10px;">
+                        After the dev disappeared on day 4, our<span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">brave community</span> stepped up to keep the dream alive. 
+                    </li>
+                    <li style="margin-top: 10px;">
+                        We urgently need <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">$800</span>  too power up our presence on Dextools and Dexscreener.
+                    </li>
+                    <li style="margin-top: 10px;">
+                    A bold <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">$10.000</span> is the target to get listed on Poloniex and other major exchanges - let's make it happen!
+                    </li>
+                    <li style="margin-top: 10px;">
+                      Rally together and send your <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">TRX</span> (preffered) or <span style="font-size: 60px; font-weight: bold; color: #FFFF00; display: inline-block;">NVIDIA</span>to the community wallet - funds are multisig-secured and will only fuel our rise on socials and exchanges!
+                        </li>
+                </ul>
+                <div class="rounded-xl drop-shado-sm"></div>
+            </div>
+            
+            </div>
+        </div>
+    
+        <h2 class="flex flex-col items-center justify-center"style="margin-top: 2rem">Community Wallet Adress:</h2>
+        <div class="flex flex-col items-center justify-center gap-y-12"><button  
+            class="copy-button px-4 py-3 border-solid border-[1px] border-lyllw/100 rounded-full bg-gradient-to-tr from-yllw/10 to-lyllw/10 flex gap-x-3 items-center font-semibold z-50 hover:scale-[1.05] hover:from-yllw/20 hover:to-lyllw/20 transition-all ease-in-out duration-300 text-sm lg:text-xl"><svg
+                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <p class="address-to-copy drop-shadow-lg">TRkx5B9ga1R2nADUkorgzzjpSQZ4DPBCh1</p>
+        </button>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    <div id="contact" class="max-w-screen-xl mx-auto p-4 ">
+    <div class="flex justify-between items-center gap-x-4 flex-col lg:flex-row py-4 ">
+        <p class="text-primary text-4xl lg:text-6xl leading-[2rem] lg:leading-[5rem] bg-gradient-to-r text-white w-max text-transparent pointer-events-none"
+            style="opacity: 1; transform: none;">NVIDIA</p>
+        <div class="w-full h-[2px] bg-gradient-to-r from-lyllw to-yllw hidden lg:block" style="width: 100%;"></div>
+        <p class="tracking-[0.5rem] font-bold w-max whitespace-nowrap" style="opacity: 1; transform: none;">CONTACT US</p>
+    </div>
+    <div class="flex justify-between items-center gap-x-4 gap-y-16 p-4 lg:px-24 lg:py-12 flex-col">
+        <div class="flex gap-x-4 gap-y-4 flex-col lg:flex-row items-center justify-center"><a
+                href="mailto: contact@nvidia.vip" target="_blank" rel="noopener noreferrer">
+                <p type="text"
+                    class="font-semibold underline hover:text-gry transition-all ease-in-out duration-300 text-3xl md:text-5xl text-stroke-sm"
+                    style="opacity: 1;"> contact@nvidia-trx.vip</p>
+            </a></div>
+        <div class="max-w-none lg:max-w-lg text-center lg:text-left" style="opacity: 1;">
+            <div class="flex gap-x-4 text-4xl  text-white">
+                    <a href="https://twitter.com/nvidia_cto" target="_blank"
+                    rel="noopener noreferrer"><img class="x-logo2 hover:filter-grayscale hover:opacity-80 cursor-pointer transition-all ease-in-out duration-300" src="img/twitter-x-seeklogo-3.svg" 
+                    alt="x.com Icon"></a>
+                    <a href="https://t.me/nvidia_cto" target="_blank" rel="noopener noreferrer"><img class="telegram-logo2 hover:filter-grayscale hover:opacity-80 cursor-pointer transition-all ease-in-out duration-300"
+                    src="https://cdn-icons-png.flaticon.com/512/1051/1051266.png" alt="Telegram Icon"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+<div><p> </br></p></div>
+<div><p> </br></p></div>
+    <div class="w-full h-auto relative ">
+        <div class="max-w-screen-xl mx-auto flex flex-col gap-y-4">
+    <div class="flex items-center justify-center">
+    <img style="width: 40%" src="img/nvidia_boat.jpg" alt="">
+    </div>
+    <div class="flex items-center justify-center">
+        
+        <p class="text-primary text-9xl text-center text-white w-max text-transparent pointer-events-none text-stroke">NVIDIA
+            </p>
+    </div>
+    <div class="flex flex-col items-center justify-center">
+        <img src="img/nvidia_100x100.png" alt="NVIDIA Logo">
+        <a href="" target="_blank" class="text-center mt-2">Copyright © 2024 All rights reserved.</a> 
+    </div>
+    
+        </div>  
+    </div>
+    </div>
+</div>
+
+</body>
+<script src="js/style2.js"></script>
+</html>
